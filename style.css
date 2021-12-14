@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #EEF3F8;
+}
+
+/* ---- cabeçalho ----- */
+header {
+    background-color: #39aae1;
+    height: auto;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.logo img {
+    height: 120px;
+}
+.menu ul, .menu li {
+    display: flex;
+}
+.menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 8px 15px;
+    width: 80px;
+    background-color: #EEF3F8;
+    margin: 0px 3px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: black;
+}
+.menu li a:hover {
+    background-color: rgb(219, 219, 219);
+    transition: all ease-out .5s;
+}
+
+
+
+
+/* sobre */
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-image: url(./foto-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.btn button {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #39aae1;
+    background-color: #39aae1;
+    margin: 30px 0px 0px 200px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+.listra {
+    width: 4px;
+    height: 300px;
+    background-color: #39aae1;
+    margin-right: 30px;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    padding-left: 200px;
+}
+.titulo h1 {
+    text-transform: capitalize;
+    font-size: 65px;
+    color: white;
+}
+.titulo h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+}
+
+/* ---- tipos de serviço ----- */
+.title {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.tipos-servicos {
+    height: auto;
+    width: 350px;
+    background-color: white;
+    margin: 30px 15px 0px 15px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192);
+}
+.tipos-servicos img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+.tipos-servicos h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px 0px;
+    text-align: center;
+}
+.tipos-servicos p {
+    padding-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.tipos-servicos button {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #39aae1;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #39aae1;
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes botao {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* ---- apresentação ----- */
+#apresentacao {
+    background-color: rgb(238, 238, 238);
+    margin-top: 50px;
+}
+.informativo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    height: 300px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: 0px 10px;
+}
+.informativo h1 {
+    font-size: 17px;
+    padding-top: 25px;
+    text-align: center;
+}
+.informativo p {
+    font-size: 16px;
+    padding-top: 15px;
+}
+.informativo img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/*---- slider comentários ---- */
+#slider-show2 {
+    height: 500px;
+    overflow: hidden;
+}
+.slider-width2 {
+    height: 100%;
+    display: flex;
+    transition: all ease-in-out .6s;
+}
+.slider-item2 {
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider-controls2 {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-control2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(121, 121, 121);
+}
+.avaliacao {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+.avaliacao h2 {
+    font-size: 17px;
+    padding-right: 5px;
+    margin: auto;
+    color: #fff;
+}
+.caixa-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+}
+.caixa-text p {
+    font-size: 19px;
+    padding: 40px 40px 20px 40px;
+    text-align: center;
+    color: #fff;
+    max-width: 600px;
+}
+.caixa-text svg {
+    color: yellow;
+    padding: 1px;
+    height: 15px;
+    width: 15px;
+}
+.caixa-text h1 {
+    padding: 10px 0px 40px 0px;
+    font-size: 19px;
+    color: #fff;
+}
+
+/*---- rodapé ---- */
+footer {
+    background-color: #414142;
+    margin-top: 50px;
+}
+.mais-info {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+.mais-info h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0px;
+    color: #ccc;
+}
+.mais-info svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+}
+.mais-info p, .mais-info a {
+    color: white;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+}
+.horario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.redes svg {
+    height: 20px;
+    width: 20px;
+    color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+footer h3, .dev {
+    font-size: 15px;
+    color: #ccc;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.dev a {
+    color: #ffffff;
+}
+
+/*---- botão do whasapp ---- */
+.botao-whats {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 9999;
+}
+.botao-whats img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@media (max-width: 1024px){
+    #sobre {
+        height: 550px;
+    }
+    .listra {
+        height: 350px;
+    }
+    .btn button {
+        margin: 30px 0px 0px 100px;
+    }
+    .listra {
+        width: 4px;
+        height: 300px;
+        background-color: #39aae1;
+        margin-right: 30px;
+    }
+    .titulo {
+        padding-left: 100px;
+    }
+    .titulo h1 {
+        text-transform: capitalize;
+        font-size: 65px;
+        color: white;
+    }
+    .titulo h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        color: white;
+        padding-top: 30px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .informativo {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .informativo p {
+        text-align: center;
+    }
+    .informativo img {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .mais-info {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+    }
+    .mais-info svg {
+        padding-top: 50px;
+    }
+    .redes svg {
+        padding-top: 0px;
+        margin-bottom: 40px;
+    }
+    .caixa-text p {
+        font-size: 19px;
+        padding: 40px 40px 20px 40px;
+        text-align: center;
+        color: #fff;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:768px){
+    .listra {
+        height: 350px;
+    }
+    .btn button {
+        margin: 30px 0px 0px 50px;
+    }
+    .listra {
+        height: 200px;
+    }
+    .titulo {
+        padding-left: 50px;
+    }
+    .titulo h1 {
+        font-size: 45px;
+    }
+    .titulo h2 {
+        font-size: 20px;
+    }
+    .slider-control2 {
+        margin: 0px 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .caixa-text p {
+        font-size: 17px;
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+        color: #fff;
+        max-width: 300px;
+    }
+    .caixa-text h1 {
+        padding: 10px 0px 20px 0px;
+        font-size: 17px;
+    }
+    footer h3, .dev {
+        font-size: 11px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:548px){
+    header {
+        background-color: #39aae1;
+        height: 100px;
+    }
+    .logo img {
+        height: 100px;
+    }
+    .btn button {
+        margin: 30px 0px 0px 20px;
+        font-size: 11px;
+    }
+    .listra {
+        height: 200px;
+    }
+    .titulo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .titulo h1 {
+        font-size: 25px;
+    }
+    .titulo h2 {
+        font-size: 15px;
+    }
+    .menuMobile {
+        width: 40px;
+        height: 30px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .mm-line {
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    .menu li a {
+        font-size: 10px;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 9999;
+        width: 50%;
+        right: 0%;
+        top: 90px;
+        background-color: #39a9e1;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: .6s;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .menu li {
+        margin-top: 20px;
+    }
+    .menu ul.active {
+        height: 170px;
+        visibility: visible;
+    }
+    .title h1 {
+        font-size: 17px;
+    }
+    .tipos-servicos {
+        width: 250px;
+    }
+    .tipos-servicos img {
+        width: 100%;
+        height: 170px;
+    }
+    .tipos-servicos h2 {
+        font-size: 13px;
+    }
+    .tipos-servicos p {
+        font-size: 12px;
+    }
+    .tipos-servicos button {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .botao-whats {
+        bottom: 20px;
+        right: 20px;
+    }
+    .botao-whats img {
+        height: 40px;
+        width: 40px;
+    }
+    .caixa-text p {
+        font-size: 12px;
+        padding: 20px 20px 10px 20px;
+        text-align: center;
+        color: #fff;
+        max-width: 240px;
+    }
+    .caixa-text h1 {
+        padding: 10px 0px 20px 0px;
+        font-size: 12px;
+    }
+    .avaliacao h2 {
+        font-size: 12px;
+    }
+    .caixa-text svg {
+        height: 12px;
+        width: 12px;
+    }
+    .informativo {
+        height: auto;
+    }
+    .options {
+        width: 250px;
+    }
+    .informativo h1 {
+        font-size: 15px;
+    }
+    .informativo p {
+        font-size: 13px;
+        padding-top: 15px;
+    }
+    .informativo img {
+        height: 70px;
+        width: 70px;
+    }
+    .mais-info {
+        padding: 0px 0px;
+    }
+    .mais-info h1 {
+        font-size: 15px;
+    }
+    .mais-info svg {
+        height: 30px;
+        width: 30px;
+    }
+    .mais-info p, .mais-info a {
+        color: white;
+        font-size: 12px;
+    }
+    .redes svg {
+        height: 15px;
+        width: 15px;
+        margin: 0px 5px 30px 5px;
+    }
+    .slider-control2 {
+        width: 25px;
+        height: 25px;
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width:375px){
+    header {
+        background-color: #39aae1;
+        height: 90px;
+    }
+    .logo img {
+        height: 90px;
+    }
+    .menu ul {
+        top: 80px;
+    }
+    .title h1 {
+        font-size: 15px;
+    }
+    .listra {
+        height: 150px;
+        margin-right: 15px;
+    }
+    .tipos-servicos {
+        width: 200px;
+    }
+    .tipos-servicos img {
+        width: 100%;
+        height: 130px;
+    }
+    .tipos-servicos h2 {
+        font-size: 12px;
+    }
+    .tipos-servicos p {
+        font-size: 11px;
+    }
+    .tipos-servicos button {
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+    .botao-whats {
+        bottom: 15px;
+        right: 15px;
+    }
+    .botao-whats img {
+        height: 35px;
+        width: 35px;
+    }
+    .caixa-text p {
+        font-size: 11px;
+        padding: 20px 20px 0px 20px;
+        max-width: 190px;
+    }
+    .caixa-text h1 {
+        font-size: 11px;
+        padding-top: 5px;
+    }
+    .avaliacao h2 {
+        font-size: 11px;
+        padding-top: 5px;
+    }
+    .caixa-text svg {
+        height: 11px;
+        width: 11px;
+        padding-top: 5px;
+    }
+    .informativo {
+        height: auto;
+    }
+    .options {
+        width: 200px;
+    }
+    .informativo h1 {
+        font-size: 12px;
+    }
+    .informativo p {
+        font-size: 11px;
+        padding-top: 15px;
+    }
+    .informativo img {
+        height: 50px;
+        width: 50px;
+    }
+    .mais-info {
+        padding: 0px;
+    }
+    .mais-info h1 {
+        font-size: 15px;
+    }
+    .mais-info svg {
+        height: 25px;
+        width: 25px;
+    }
+    .mais-info p, .mais-info a {
+        color: white;
+        font-size: 12px;
+    }
+    .redes svg {
+        height: 15px;
+        width: 15px;
+        margin: 0px 5px 30px 5px;
+    }
+    .slider-control2 {
+        width: 20px;
+        height: 20px;
+    }
+}
